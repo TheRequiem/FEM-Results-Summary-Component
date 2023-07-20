@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+/*  CSS Reset                  */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: auto
+}
+
+:root {
+
+  /* Fonts */
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 18px;
+  --fw-med: 500;
+  --fw-bold: 700;
+  --fw-extra: 800;
+  color: white;
+  /* Primary Colors */
+  --clr-light-red: hsl(0, 100%, 67%);
+  --clr-orange-yellow: hsl(39, 100%, 56%);
+  --clr-green-teal: hsl(166, 100%, 37%);
+  --clr-cobalt-blue: hsl(234, 85%, 45%);
+  /* Gradients */
+  --clr-light-slate-blue: hsl(252, 100%, 67%);
+  --clr-light-royal-blue: hsl(241, 81%, 54%);
+  --clr-violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --clr-persian-blue-circle: hsla(241, 72%, 46%, 0);
+  /* Neutral Colors */
+  --clr-pale-blue: hsl(221, 100%, 96%);
+  --clr-light-lavender: hsl(241, 100%, 89%);
+  --clr-dark-gray-blue: hsl(224, 30%, 27%);
+
+
+}
+
+p {
+  font-weight: var(--fw-med);
+  font-size: 0.68rem;
+  margin: 2rem 4.5rem;
+  margin-top: 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20.5rem;
+  max-width: 100%;
+}
+
+.result {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(var(--clr-light-slate-blue), var(--clr-light-royal-blue));
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.result p {
+  text-align: center;
+}
+
+h1 {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: var(--fw-med);
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+h2 {
+  font-weight: var(--fw-bold);
+  color: black;
+  font-size: 0.95rem;
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(var(--clr-violet-blue-circle), var(--clr-persian-blue-circle));
+  border-radius: 50%;
+  width: 8rem;
+  padding: 1rem;
+}
+
+.circle blockquote {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: var(--fw-extra);
+}
+
+.circle p {
+  font-weight: var(--fw-med);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+blockquote {
+  font-weight: var(--fw-med);
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+
+aside {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.segments {
+  margin: 0.7rem 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-weight: var(--fw-med);
+  font-size: 0.68rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+
+.segments h3 {
+  margin-left: 0.3rem;
+}
+
+.segments p {
+  margin: 0;
+  margin-left: auto;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: var(--fw-bold);
+  font-size: 0.8rem;
+}
+
+.segments p span {
+  color: black;
+  font-weight: var(--fw-extra);
+}
+
+#reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: var(--clr-light-red);
+}
+
+#memory {
+  color: var(--clr-orange-yellow);
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+#verbal {
+  color: var(--clr-green-teal);
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+#visual {
+  color: var(--clr-cobalt-blue);
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+button {
+  width: 100%;
+  color: white;
+  font-weight: var(--fw-med);
+  font-size: 0.9rem;
+  background-color: var(--clr-dark-gray-blue);
+  padding: 0.6rem;
+  border-radius: 2rem;
+  border-width: 0;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--clr-light-royal-blue);
+}
+
+.attribution {
+  font-size: 13px;
+  text-align: center;
+  color: black;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 800px) {
+
+  main {
+    margin: 5rem auto;
+    flex-direction: row;
+    width: 38rem;
+    border-bottom-right-radius: 1.5rem;
+  }
+
+  .result {
+    border-radius: 1.5rem;
+    height: 21rem;
+    width: 23rem;
+  }
+
+  aside {
+    height: 100%;
+    width: 70%;
+  }
+
+  p {
+    margin: 1rem 3rem;
+  }
+
+  blockquote {
+    margin-top: 1rem;
+  }
+
+}
