@@ -270,7 +270,7 @@ button:hover {
 @media screen and (min-width: 800px) {
 
   main {
-    margin: 5rem auto;
+    margin: 8rem auto;
     flex-direction: row;
     width: 38rem;
     border-bottom-right-radius: 1.5rem;
