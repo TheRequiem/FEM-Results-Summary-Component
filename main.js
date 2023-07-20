@@ -24,10 +24,10 @@ memory.innerHTML = data[1].category;
 memoryIcon.src = data[1].icon;
 memoryScore.innerHTML = data[1].score + " ";
 
-visual.innerHTML = data[2].category;
-visualIcon.src = data[2].icon;
-visualScore.innerHTML = data[2].score + " ";
+verbal.innerHTML = data[2].category;
+verbalIcon.src = data[2].icon;
+verbalScore.innerHTML = data[2].score + " ";
 
-verbal.innerHTML = data[3].category;
-verbalIcon.src = data[3].icon;
-verbalScore.innerHTML = data[3].score + " ";
+visual.innerHTML = data[3].category;
+visualIcon.src = data[3].icon;
+visualScore.innerHTML = data[3].score + " ";
